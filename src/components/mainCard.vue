@@ -135,4 +135,7 @@ background-color: #7180AC;
   border-radius: 100%;
   text-align: center;
 }
+.imgHolder{
+  background-color:  #ddd;
+}
 </style>
