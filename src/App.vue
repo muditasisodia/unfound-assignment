@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
+    <mainCard></mainCard>
     <Footer></Footer>
   </div>
 </template>
@@ -8,11 +9,12 @@
 <script>
 import NavBar from './components/NavBar.vue'
 import Footer from './components/Footer.vue'
+import mainCard from './components/mainCard.vue'
 
 export default {
   name: 'app',
   components: {
-    NavBar, Footer
+    NavBar, Footer, mainCard
   }
 }
 </script>

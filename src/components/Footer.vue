@@ -46,11 +46,11 @@
             <!--/.Second column-->
 
             <!--Third column-->
-            <div class="col-md-4">
+            <div class="col-md-5">
 
-                <h5 class="text-center px-5">Subscribe to get UnFound Newsletter and Printable Books</h5>
-                <p>
-                  <form>
+                <p class="text-center px-5">Subscribe to get UnFound Newsletter and Printable Books</p>
+
+                  <form class="mb-3">
                     <div class="form-group">
                       <label>Name</label>
                       <input type="text" class="form-control">
@@ -62,7 +62,7 @@
 
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
-                </p>
+
             </div>
             <!--/.Third column-->
         </div>
@@ -82,6 +82,9 @@
 </template>
 
 <script>
+  export default{
+    name: 'Footer'
+  }
 </script>
 
 <style scoped>
