@@ -1,8 +1,7 @@
 <!--Center align elements when in drop down-->
-<!--Control width of vert nav with vue instead of jquery-->
 
 <template>
-  <div class="hello">
+  <div>
 
   <!--Vertical Navbar-->
   <div class="close-nav sidenav" v-bind:style="{width: w}">
@@ -62,7 +61,7 @@
       </li>
 
     </ul>
-    <a href="#" class="nav-item" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i>Search</a>
+    <a href="#" class="nav-item mr-2" data-toggle="modal" data-target="#myModal"><i class="fa fa-search mr-2" aria-hidden="true"></i>Search</a>
 
     <button class="btn btn-danger nav-item" style="display: block;">Get App</button>
 
