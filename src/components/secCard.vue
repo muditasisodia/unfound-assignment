@@ -1,7 +1,7 @@
 <template>
 <div>
 
-  <div class="card" @mouseover="isSelected = true" @mouseleave="isSelected = false">
+  <div class="card my-2" @mouseover="isSelected = true" @mouseleave="isSelected = false">
     <div class="newsTag px-2 py-1">{{newsdata.newstag}}</div>
     <div class="dateTag" v-bind:style="{opacity: isSelected ? 1 : 0}">{{newsdata.date}}</div>
     <div class="shareIcon" v-if="isSelected">
@@ -34,16 +34,18 @@
     },
     mounted: function(){
       /*Ensuring thatcontent in div does not overflow*/
+
       $(".limit-char").each(function(){
     var len=$(this).text().length;
-    if(len>400)
-    {
-      $(this).text($(this).text().substr(0,400)+'...');
-    }
-    });
-    }
+    var lim;
 
-    }
+  if(len>400)
+  {
+    $(this).text($(this).text().substr(0,400)+'...');
+    console.log(lim)
+  }
+    });
+    }  }
 
 
 </script>
@@ -51,6 +53,7 @@
 <style scoped>
 .card{
   height: 575px;
+  border-radius: 0px;
 }
 .card-title{
   font-family: serif;
@@ -58,6 +61,7 @@
 .img-holder{
   height: 230px;
   background-color: #ddd;
+  transition: opacity 1s;
 }
 .card-body{
   height: 345px;
@@ -71,7 +75,7 @@
   color: white;
   position:absolute;
   left: 10px;
-  font-size: 15px;
+  font-size: 13px;
   bottom: 330px;
   z-index: 1;
 }
@@ -91,5 +95,9 @@
   background-color: rgba(0,0,0,0.8);
   border-radius: 100%;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+
 }
 </style>

@@ -9,18 +9,18 @@
               <i class="fa fa-share-alt" aria-hidden="true" style="color:white; padding-top: 12px;"></i>
             </div>
         </div>
-        <div class="col-md-5 p-3">
+        <div class="col-md-5">
           <p>
-          <h3 class="card-title">Lorem ipsum dolor</h3>
+          <h3 class="card-title px-3">Lorem ipsum dolor</h3>
           </p>
           <p>
-          <div class="card-subtitle my-2">
+          <div class="card-subtitle my-2 px-3">
             <!--News Tag-->
             <span style="color: white; background-color: orange;" class="py-1 px-2 mr-3">World</span>
             <span style="color: rgba(0,0,0,0.7);">01 May 2018</span>
           </div>
           </p>
-          <p class="card-text">
+          <p class="card-text pb-3 px-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab saepe cum reprehenderit voluptate repudiandae praesentium excepturi blanditiis vitae quaerat, fugiat, natus tempore quod quos, facilis nesciunt aut consequuntur maiores animi error qui! Accusamus enim sequi itaque aspernatur id perspiciatis accusantium eum omnis qui. Maxime tempora voluptas pariatur, voluptate culpa quos, dolorem non placeat autem consequuntur natus sint cupiditate nisi velit! Itaque ipsum eveniet, minima dolores quis maiores nisi asperiores magni.
           </p>
         </div>
@@ -137,5 +137,16 @@ background-color: #7180AC;
 }
 .imgHolder{
   background-color:  #ddd;
+  transition: opacity 1s;
+}
+
+@media only screen and (max-width: 768px) {
+  .col-md-5{
+    padding: 3%;
+  }
+  li{
+    height: 80px;
+    padding-top: 5%;
+  }
 }
 </style>
