@@ -1,6 +1,6 @@
 <template>
 <div>
-
+  <a href="/newsDetails">
   <div class="card my-2" @mouseover="isSelected = true" @mouseleave="isSelected = false">
     <div class="newsTag px-2 py-1">{{newsdata.newstag}}</div>
     <div class="dateTag" v-bind:style="{opacity: isSelected ? 1 : 0}">{{newsdata.date}}</div>
@@ -17,6 +17,7 @@
       <p class="card-text limit-char">{{newsdata.content}}</p>
     </div>
   </div>
+  </a>
 
   <!--<h3>{{ newsdata.title }}</h3>-->
 
@@ -99,5 +100,10 @@
 
 @media only screen and (min-width: 768px){
 
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
 </style>

@@ -17,5 +17,6 @@ export default new Router({
       name: 'cardPage',
       component: cardPage
     }
-  ]
+  ],
+  mode: 'history'
 })
