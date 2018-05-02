@@ -1,2 +1,6 @@
-# unfound-assignment
-To recreate 2 of knappily's pages using VueJS
+# UnFound Assignment
+### How to Run
+1. Clone repository
+2. Open command window and navigate to project folder
+3. Run `npm install`
+4. Run `npm run serve`

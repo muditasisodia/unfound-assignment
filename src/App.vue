@@ -19,6 +19,7 @@ import Footer from './components/Footer.vue'
 import mainCard from './components/mainCard.vue'
 import secCard from './components/secCard.vue'
 
+
 export default {
   name: 'app',
   components: {
