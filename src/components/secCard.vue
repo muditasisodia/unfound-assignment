@@ -80,7 +80,7 @@
   z-index: 1;
 }
 .dateTag{
-  color: #636363;
+  color: #444;
   position: absolute;
   right: 10px;
   bottom: 355px;
