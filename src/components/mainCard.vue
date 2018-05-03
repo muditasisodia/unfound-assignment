@@ -1,3 +1,5 @@
+<!--This component has been completely hardcoded-->
+
 <template>
   <div class="container">
     <div class="card m-3">
@@ -137,6 +139,9 @@ background-color: #7180AC;
   border-radius: 100%;
   text-align: center;
 }
+.shareIcon:hover{
+  cursor: pointer;
+}
 .img-holder{
   background-color:  black;
   padding: 0px;
@@ -145,7 +150,6 @@ img{
   transition: opacity 1s;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 @media only screen and (max-width: 769px) {

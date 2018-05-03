@@ -5,10 +5,10 @@
     <div class="newsTag px-2 py-1">{{newsdata.newstag}}</div>
     <div class="dateTag" v-bind:style="{opacity: isSelected ? 1 : 0}">{{newsdata.date}}</div>
     <div class="shareIcon" v-if="isSelected">
-      <i class="fa fa-share-alt" aria-hidden="true" style="color:white; padding-top: 12px;"></i>
+      <i class="fa fa-share-alt" aria-hidden="true" style="color:black; padding-top: 12px;"></i>
     </div>
-    <div class="img-holder"  v-bind:style="{opacity: isSelected ? 0.5 : 1}">
-    <!--<img src="" alt="News Image" class="card-img-top">-->
+    <div class="img-holder">
+    <img v-bind:src="newsdata.imgURL" alt="News Image" class="card-img-top" v-bind:style="{opacity: isSelected ? 0.7 : 1}"/>
 
     </div>
     <div class="card-body">
@@ -61,8 +61,8 @@
 }
 .img-holder{
   height: 230px;
-  background-color: #ddd;
-  transition: opacity 1s;
+  background-color: black;
+  overflow: hidden;
 }
 .card-body{
   height: 345px;
@@ -81,11 +81,12 @@
   z-index: 1;
 }
 .dateTag{
-  color: #444;
+  color: white;
   position: absolute;
   right: 10px;
   bottom: 355px;
   opacity: 0;
+  z-index: 1;
 }
 .shareIcon{
   position: absolute;
@@ -93,9 +94,16 @@
   height: 40px;
   top: 5px;
   right: 7px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: white;
   border-radius: 100%;
   text-align: center;
+  z-index: 1;
+}
+img{
+  transition: opacity 1s;
+  width: auto;
+  height: 100%;
+  border-radius: 0px;
 }
 
 @media only screen and (min-width: 768px){
