@@ -3,10 +3,10 @@
     <div class="card m-3">
       <div class="card-body">
       <div class="row">
-        <div class="col-md-6 imgHolder" @mouseover="isSelected = true" @mouseleave="isSelected = false" v-bind:style="{opacity: isSelected ? 0.5 : 1}">
-            <!--Image comes here-->
+        <div class="col-md-6 img-holder" @mouseover="isSelected = true" @mouseleave="isSelected = false" >
+            <img src="../assets/mainCardImg.jpg" alt="News Image" v-bind:style="{opacity: isSelected ? 0.7 : 1}">
             <div class="shareIcon" v-if="isSelected">
-              <i class="fa fa-share-alt" aria-hidden="true" style="color:white; padding-top: 12px;"></i>
+              <i class="fa fa-share-alt" aria-hidden="true" style="color:#333; padding-top: 12px;"></i>
             </div>
         </div>
         <div class="col-md-5">
@@ -82,15 +82,16 @@
 }
 ul{
   height:100%;
+  background-color: black;
 }
 li{
-  height: 16.6667%;
+  height: 16.666667%;
   padding-top: 25%;
   display: block;
 }
 li:hover{
   cursor: pointer;
-  opacity: 0.75;
+  opacity: 0.9;
 }
 a{
   text-decoration: none;
@@ -124,6 +125,7 @@ background-color: #7180AC;
 .col-md-1{
   margin: 0px;
   padding: 0px;
+  /*background-color: black;*/
 }
 .shareIcon{
   position: absolute;
@@ -131,16 +133,22 @@ background-color: #7180AC;
   height: 40px;
   top: 5px;
   right: 7px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: white;
   border-radius: 100%;
   text-align: center;
 }
-.imgHolder{
-  background-color:  #ddd;
+.img-holder{
+  background-color:  black;
+  padding: 0px;
+}
+img{
   transition: opacity 1s;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .col-md-5{
     padding: 3%;
   }
