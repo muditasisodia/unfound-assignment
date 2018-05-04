@@ -2,7 +2,7 @@
 <div>
   <a href="/newsDetails">
   <div class="card my-2" @mouseover="isSelected = true" @mouseleave="isSelected = false">
-    <div class="newsTag px-2 py-1">{{newsdata.newstag}}</div>
+    <div class="newsTag px-2 py-1" v-bind:style="{ backgroundColor: newsdata.shade}">{{newsdata.newstag}}</div>
     <div class="dateTag" v-bind:style="{opacity: isSelected ? 1 : 0}">{{newsdata.date}}</div>
     <div class="shareIcon" v-if="isSelected">
       <i class="fa fa-share-alt" aria-hidden="true" style="color:black; padding-top: 12px;"></i>
@@ -18,9 +18,6 @@
     </div>
   </div>
   </a>
-
-  <!--<h3>{{ newsdata.title }}</h3>-->
-
   </div>
 </template>
 
