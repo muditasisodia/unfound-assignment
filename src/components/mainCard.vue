@@ -122,7 +122,8 @@ background-color: #2B4570;
 background-color: #7180AC;
 }
 .card{
-  border-radius: 0;
+  border: none;
+  border-radius: 0px;
 }
 .col-md-1{
   margin: 0px;

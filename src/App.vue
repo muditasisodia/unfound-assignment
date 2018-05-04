@@ -30,6 +30,6 @@ export default {
   margin-top: 60px;*/
 }
 body{
-  background-color: #eee;
+  background-color: #efefef;
 }
 </style>

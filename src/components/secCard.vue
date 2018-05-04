@@ -52,6 +52,7 @@
 .card{
   height: 575px;
   border-radius: 0px;
+  border: none;
 }
 .card-title{
   font-family: serif;
