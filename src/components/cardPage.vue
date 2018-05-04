@@ -50,22 +50,26 @@
             <div class="col-md-12">
             <div class="row nav-list py-2">
               <div class="col-md-1">
-              <i class="fa fa-arrow-left red-nav-btn"></i>
+              <i class="fa fa-arrow-left red-nav-btn" v-on:click="changeBtn(-1)" ></i>
+              <!--Passing -1 because we need to decrease the value-->
               </div>
               <div class="col-md-10">
-                <span class="red-nav-btn">What</span>
-                <span class="red-nav-btn">Why</span>
-                <span class="red-nav-btn">When</span>
-                <span class="red-nav-btn">Where</span>
-                <span class="red-nav-btn">Who</span>
-                <span class="red-nav-btn">How</span>
-                <span class="red-nav-btn">References</span>
+                <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==2? 1: 0.7}">What</span>
+                <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==3? 1: 0.7}">Why</span>
+                <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==4? 1: 0.7}">When</span>
+                <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==5? 1: 0.7}">Where</span>
+                <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==6? 1: 0.7}">Who</span>
+                <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==7? 1: 0.7}">How</span>
+                <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==8? 1: 0.7}">References</span>
               </div>
               <div class="col-md-1">
-              <i class="fa fa-arrow-right red-nav-btn"></i>
+              <i class="fa fa-arrow-right red-nav-btn" v-on:click="changeBtn(1)"></i>
               </div>
             </div>
           </div>
+          </div>
+          <div class="row">
+            <img src="" alt="">
           </div>
         </div>
         </div>
@@ -74,12 +78,12 @@
       <div class="col-md-3">
         <div class="card my-4 mr-2">
           <ul class="list-unstyled p-3">
-            <li>What does the draft say?</li>
-            <li class="add-border">Why lorem ipsum dolor sit amet.?</li>
-            <li class="add-border">When lorem ipsum dolor sit amet consectetur?</li>
-            <li class="add-border">Where lorem ipsum dolor sit?</li>
-            <li class="add-border">Who lorem ipsum dolor sit amet?</li>
-            <li class="add-border">How lorem ipsum dolor sit amet consectetur adipisicing?</li>
+            <li v-bind:style="{color: btnClicked==2? activeCol: inactiveCol}" v-on:click="btnClicked(2)">What does the draft say?</li>
+            <li class="add-border" v-bind:style="{color: btnClicked==3? activeCol: inactiveCol}" v-on:click="btnClicked(3)">Why lorem ipsum dolor sit amet.?</li>
+            <li class="add-border" v-bind:style="{color: btnClicked==4? activeCol: inactiveCol}" v-on:click="btnClicked(4)">When lorem ipsum dolor sit amet consectetur?</li>
+            <li class="add-border" v-bind:style="{color: btnClicked==5? activeCol: inactiveCol}" v-on:click="btnClicked(5)">Where lorem ipsum dolor sit?</li>
+            <li class="add-border" v-bind:style="{color: btnClicked==6? activeCol: inactiveCol}" v-on:click="btnClicked(6)">Who lorem ipsum dolor sit amet?</li>
+            <li class="add-border" v-bind:style="{color: btnClicked==7? activeCol: inactiveCol}" v-on:click="btnClicked(7)">How lorem ipsum dolor sit amet consectetur adipisicing?</li>
           </ul>
         </div>
       </div><!--End of side navigation-->
@@ -90,7 +94,32 @@
 
 <script>
   export default{
-    name: "cardPage"
+    name: "cardPage",
+    data(){
+      return{
+        btnClicked: 1,
+        activeCol: '#c12020',
+        inactiveCol: '#666'
+      }
+    },
+    methods: {
+      changeBtn(i){
+/*Started numbering of sections from 2 in order to reserve 1 and -1 for increment and decrement*/
+        if(i>=2 && i<=8){
+          this.btnClicked=i;
+        }
+        else{
+
+        this.btnClicked+=i;
+        if(this.btnClicked > 8){
+          this.btnClicked = 2;
+        }
+        else if(this.btnClicked<2){
+          this.btnClicked = 8;
+        }
+      }
+      }
+    }
   }
 </script>
 
