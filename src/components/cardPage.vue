@@ -68,9 +68,104 @@
             </div>
           </div>
           </div>
+
           <div class="row">
-            <img src="" alt="">
+
+            <div class="col-md-12">
+
+              <div v-if="btnClicked==2">
+                <h3>What</h3>
+                <img src="https://d27bygd3qv5fha.cloudfront.net/May-04-2018/5aec0c65a7fa4e38c19b54e7/India-s-draft-Telecom-wish-list-2018-May-04-13-08-05-section1.png" alt="News Img" class="main-art-img">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sed assumenda, exercitationem, veniam, consequuntur alias officia beatae aliquid quisquam dolores dicta minus odio. A nemo fugit laborum deserunt tenetur eum.
+
+                Soluta quas aliquid quis aperiam facilis voluptates voluptatem quisquam possimus veritatis temporibus molestiae assumenda dolores minus! Pariatur, reiciendis molestiae voluptatum veniam molestias obcaecati facilis eos id repellat inventore maiores explicabo fuga ratione alias ab, ullam? Veritatis inventore, doloremque quod illum.
+                Nesciunt optio obcaecati beatae quos ea voluptas deserunt fugit dolores fugiat nihil error nobis, labore amet maxime, pariatur nulla! Quae praesentium animi minus, optio beatae repellat quidem rerum atque dolores iste et ducimus, vel magnam vero laborum quos odit adipisci ex aperiam sed fuga repellendus mollitia, similique unde officia! Distinctio odio saepe deserunt, aspernatur, sit blanditiis at. Recusandae veniam atque dolorem esse accusantium, nulla nesciunt modi deserunt sed, repudiandae pariatur numquam deleniti porro tempore harum sequi inventore tempora ducimus consequuntur vero cum a repellendus.
+               Aperiam, quae! Necessitatibus earum culpa voluptatum, numquam. In repellat inventore praesentium cupiditate, magni iste quisquam id harum quis quibusdam quam autem dolore? Sunt consequatur tenetur vel repudiandae architecto repellat adipisci porro quod, fuga sapiente, nemo iusto suscipit omnis nisi! Et ad autem minima vitae alias unde, corporis suscipit quaerat officia porro. Deserunt nobis dolorum quaerat quia, aliquam, veniam quod accusantium, perferendis rerum beatae, accusamus nam illo! Quam facere mollitia rerum aperiam aspernatur assumenda cupiditate error, adipisci libero fuga nam! Dignissimos laboriosam, sunt ad, fugiat sit corporis laborum accusantium natus mollitia incidunt nesciunt quaerat unde repudiandae quo non beatae voluptatem, nulla est aliquid ratione! Cumque distinctio vero necessitatibus minima repellendus cupiditate totam quae in eum sed voluptate obcaecati id quo quis sapiente tempora quaerat earum mollitia libero nisi unde, accusantium, sint ullam? Fugiat fugit, repellat! Expedita rerum quasi eligendi vitae repellat eveniet perferendis officiis et asperiores reprehenderit.
+              </div>
+              <div v-if="btnClicked==3">
+                <h3>Why</h3>
+                <img src="https://d27bygd3qv5fha.cloudfront.net/May-03-2018/5aeb5f1c806a9a181f2ca548/optimizegeneral" alt="News Img" class="main-art-img">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sed assumenda, exercitationem, veniam, consequuntur alias officia beatae aliquid quisquam dolores dicta minus odio. A nemo fugit laborum deserunt tenetur eum.
+
+                Soluta quas aliquid quis aperiam facilis voluptates voluptatem quisquam possimus veritatis temporibus molestiae assumenda dolores minus! Pariatur, reiciendis molestiae voluptatum veniam molestias obcaecati facilis eos id repellat inventore maiores explicabo fuga ratione alias ab, ullam? Veritatis inventore, doloremque quod illum.
+                Nesciunt optio obcaecati beatae quos ea voluptas deserunt fugit dolores fugiat nihil error nobis, labore amet maxime, pariatur nulla! Quae praesentium animi minus, optio beatae repellat quidem rerum atque dolores iste et ducimus, vel magnam vero laborum quos odit adipisci ex aperiam sed fuga repellendus mollitia, similique unde officia! Distinctio odio saepe deserunt, aspernatur, sit blanditiis at. Recusandae veniam atque dolorem esse accusantium, nulla nesciunt modi deserunt sed, repudiandae pariatur numquam deleniti porro tempore harum sequi inventore tempora ducimus consequuntur vero cum a repellendus.
+               Aperiam, quae! Necessitatibus earum culpa voluptatum, numquam. In repellat inventore praesentium cupiditate, magni iste quisquam id harum quis quibusdam quam autem dolore? Sunt consequatur tenetur vel repudiandae architecto repellat adipisci porro quod, fuga sapiente, nemo iusto suscipit omnis nisi! Et ad autem minima vitae alias unde, corporis suscipit quaerat officia porro. Deserunt nobis dolorum quaerat quia, aliquam, veniam quod accusantium, perferendis rerum beatae, accusamus nam illo! Quam facere mollitia rerum aperiam aspernatur assumenda cupiditate error, adipisci libero fuga nam! Dignissimos laboriosam, sunt ad, fugiat sit corporis laborum accusantium natus mollitia incidunt nesciunt quaerat unde repudiandae quo non beatae voluptatem, nulla est aliquid ratione! Cumque distinctio vero necessitatibus minima repellendus cupiditate totam quae in eum sed voluptate obcaecati id quo quis sapiente tempora quaerat earum mollitia libero nisi unde, accusantium, sint ullam? Fugiat fugit, repellat! Expedita rerum quasi eligendi vitae repellat eveniet perferendis officiis et asperiores reprehenderit.
+              </div>
+              <div v-if="btnClicked==4">
+                <h3>When</h3>
+                <img src="https://d27bygd3qv5fha.cloudfront.net/May-04-2018/5aec0c65a7fa4e38c19b54e7/optimizesection3" alt="News Img" class="main-art-img">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sed assumenda, exercitationem, veniam, consequuntur alias officia beatae aliquid quisquam dolores dicta minus odio. A nemo fugit laborum deserunt tenetur eum.
+
+                Soluta quas aliquid quis aperiam facilis voluptates voluptatem quisquam possimus veritatis temporibus molestiae assumenda dolores minus! Pariatur, reiciendis molestiae voluptatum veniam molestias obcaecati facilis eos id repellat inventore maiores explicabo fuga ratione alias ab, ullam? Veritatis inventore, doloremque quod illum.
+                Nesciunt optio obcaecati beatae quos ea voluptas deserunt fugit dolores fugiat nihil error nobis, labore amet maxime, pariatur nulla! Quae praesentium animi minus, optio beatae repellat quidem rerum atque dolores iste et ducimus, vel magnam vero laborum quos odit adipisci ex aperiam sed fuga repellendus mollitia, similique unde officia! Distinctio odio saepe deserunt, aspernatur, sit blanditiis at. Recusandae veniam atque dolorem esse accusantium, nulla nesciunt modi deserunt sed, repudiandae pariatur numquam deleniti porro tempore harum sequi inventore tempora ducimus consequuntur vero cum a repellendus.
+               Aperiam, quae! Necessitatibus earum culpa voluptatum, numquam. In repellat inventore praesentium cupiditate, magni iste quisquam id harum quis quibusdam quam autem dolore? Sunt consequatur tenetur vel repudiandae architecto repellat adipisci porro quod, fuga sapiente, nemo iusto suscipit omnis nisi! Et ad autem minima vitae alias unde, corporis suscipit quaerat officia porro. Deserunt nobis dolorum quaerat quia, aliquam, veniam quod accusantium, perferendis rerum beatae, accusamus nam illo! Quam facere mollitia rerum aperiam aspernatur assumenda cupiditate error, adipisci libero fuga nam! Dignissimos laboriosam, sunt ad, fugiat sit corporis laborum accusantium natus mollitia incidunt nesciunt quaerat unde repudiandae quo non beatae voluptatem, nulla est aliquid ratione! Cumque distinctio vero necessitatibus minima repellendus cupiditate totam quae in eum sed voluptate obcaecati id quo quis sapiente tempora quaerat earum mollitia libero nisi unde, accusantium, sint ullam? Fugiat fugit, repellat! Expedita rerum quasi eligendi vitae repellat eveniet perferendis officiis et asperiores reprehenderit.
+              </div>
+              <div v-if="btnClicked==5">
+                <h3>Where</h3>
+                <img src="https://d27bygd3qv5fha.cloudfront.net/May-04-2018/5aec0c65a7fa4e38c19b54e7/India-s-draft-Telecom-wish-list-2018-May-04-13-08-05-section1.png" alt="News Img" class="main-art-img">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sed assumenda, exercitationem, veniam, consequuntur alias officia beatae aliquid quisquam dolores dicta minus odio. A nemo fugit laborum deserunt tenetur eum.
+
+                Soluta quas aliquid quis aperiam facilis voluptates voluptatem quisquam possimus veritatis temporibus molestiae assumenda dolores minus! Pariatur, reiciendis molestiae voluptatum veniam molestias obcaecati facilis eos id repellat inventore maiores explicabo fuga ratione alias ab, ullam? Veritatis inventore, doloremque quod illum.
+                Nesciunt optio obcaecati beatae quos ea voluptas deserunt fugit dolores fugiat nihil error nobis, labore amet maxime, pariatur nulla! Quae praesentium animi minus, optio beatae repellat quidem rerum atque dolores iste et ducimus, vel magnam vero laborum quos odit adipisci ex aperiam sed fuga repellendus mollitia, similique unde officia! Distinctio odio saepe deserunt, aspernatur, sit blanditiis at. Recusandae veniam atque dolorem esse accusantium, nulla nesciunt modi deserunt sed, repudiandae pariatur numquam deleniti porro tempore harum sequi inventore tempora ducimus consequuntur vero cum a repellendus.
+               Aperiam, quae! Necessitatibus earum culpa voluptatum, numquam. In repellat inventore praesentium cupiditate, magni iste quisquam id harum quis quibusdam quam autem dolore? Sunt consequatur tenetur vel repudiandae architecto repellat adipisci porro quod, fuga sapiente, nemo iusto suscipit omnis nisi! Et ad autem minima vitae alias unde, corporis suscipit quaerat officia porro. Deserunt nobis dolorum quaerat quia, aliquam, veniam quod accusantium, perferendis rerum beatae, accusamus nam illo! Quam facere mollitia rerum aperiam aspernatur assumenda cupiditate error, adipisci libero fuga nam! Dignissimos laboriosam, sunt ad, fugiat sit corporis laborum accusantium natus mollitia incidunt nesciunt quaerat unde repudiandae quo non beatae voluptatem, nulla est aliquid ratione! Cumque distinctio vero necessitatibus minima repellendus cupiditate totam quae in eum sed voluptate obcaecati id quo quis sapiente tempora quaerat earum mollitia libero nisi unde, accusantium, sint ullam? Fugiat fugit, repellat! Expedita rerum quasi eligendi vitae repellat eveniet perferendis officiis et asperiores reprehenderit.
+              </div>
+              <div v-if="btnClicked==6">
+                <h3>Who</h3>
+                <img src="https://d27bygd3qv5fha.cloudfront.net/May-04-2018/5aec0c65a7fa4e38c19b54e7/India-s-draft-Telecom-wish-list-2018-May-04-13-07-40-section4.jpeg" alt="News Img" class="main-art-img">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sed assumenda, exercitationem, veniam, consequuntur alias officia beatae aliquid quisquam dolores dicta minus odio. A nemo fugit laborum deserunt tenetur eum.
+
+                Soluta quas aliquid quis aperiam facilis voluptates voluptatem quisquam possimus veritatis temporibus molestiae assumenda dolores minus! Pariatur, reiciendis molestiae voluptatum veniam molestias obcaecati facilis eos id repellat inventore maiores explicabo fuga ratione alias ab, ullam? Veritatis inventore, doloremque quod illum.
+                Nesciunt optio obcaecati beatae quos ea voluptas deserunt fugit dolores fugiat nihil error nobis, labore amet maxime, pariatur nulla! Quae praesentium animi minus, optio beatae repellat quidem rerum atque dolores iste et ducimus, vel magnam vero laborum quos odit adipisci ex aperiam sed fuga repellendus mollitia, similique unde officia! Distinctio odio saepe deserunt, aspernatur, sit blanditiis at. Recusandae veniam atque dolorem esse accusantium, nulla nesciunt modi deserunt sed, repudiandae pariatur numquam deleniti porro tempore harum sequi inventore tempora ducimus consequuntur vero cum a repellendus.
+               Aperiam, quae! Necessitatibus earum culpa voluptatum, numquam. In repellat inventore praesentium cupiditate, magni iste quisquam id harum quis quibusdam quam autem dolore? Sunt consequatur tenetur vel repudiandae architecto repellat adipisci porro quod, fuga sapiente, nemo iusto suscipit omnis nisi! Et ad autem minima vitae alias unde, corporis suscipit quaerat officia porro. Deserunt nobis dolorum quaerat quia, aliquam, veniam quod accusantium, perferendis rerum beatae, accusamus nam illo! Quam facere mollitia rerum aperiam aspernatur assumenda cupiditate error, adipisci libero fuga nam! Dignissimos laboriosam, sunt ad, fugiat sit corporis laborum accusantium natus mollitia incidunt nesciunt quaerat unde repudiandae quo non beatae voluptatem, nulla est aliquid ratione! Cumque distinctio vero necessitatibus minima repellendus cupiditate totam quae in eum sed voluptate obcaecati id quo quis sapiente tempora quaerat earum mollitia libero nisi unde, accusantium, sint ullam? Fugiat fugit, repellat! Expedita rerum quasi eligendi vitae repellat eveniet perferendis officiis et asperiores reprehenderit.
+              </div>
+              <div v-if="btnClicked==7">
+                <h3>How</h3>
+                <img src="https://d27bygd3qv5fha.cloudfront.net/May-04-2018/5aec0c65a7fa4e38c19b54e7/India-s-draft-Telecom-wish-list-2018-May-04-13-08-05-section1.png" alt="News Img" class="main-art-img">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sed assumenda, exercitationem, veniam, consequuntur alias officia beatae aliquid quisquam dolores dicta minus odio. A nemo fugit laborum deserunt tenetur eum.
+
+                Soluta quas aliquid quis aperiam facilis voluptates voluptatem quisquam possimus veritatis temporibus molestiae assumenda dolores minus! Pariatur, reiciendis molestiae voluptatum veniam molestias obcaecati facilis eos id repellat inventore maiores explicabo fuga ratione alias ab, ullam? Veritatis inventore, doloremque quod illum.
+                Nesciunt optio obcaecati beatae quos ea voluptas deserunt fugit dolores fugiat nihil error nobis, labore amet maxime, pariatur nulla! Quae praesentium animi minus, optio beatae repellat quidem rerum atque dolores iste et ducimus, vel magnam vero laborum quos odit adipisci ex aperiam sed fuga repellendus mollitia, similique unde officia! Distinctio odio saepe deserunt, aspernatur, sit blanditiis at. Recusandae veniam atque dolorem esse accusantium, nulla nesciunt modi deserunt sed, repudiandae pariatur numquam deleniti porro tempore harum sequi inventore tempora ducimus consequuntur vero cum a repellendus.
+               Aperiam, quae! Necessitatibus earum culpa voluptatum, numquam. In repellat inventore praesentium cupiditate, magni iste quisquam id harum quis quibusdam quam autem dolore? Sunt consequatur tenetur vel repudiandae architecto repellat adipisci porro quod, fuga sapiente, nemo iusto suscipit omnis nisi! Et ad autem minima vitae alias unde, corporis suscipit quaerat officia porro. Deserunt nobis dolorum quaerat quia, aliquam, veniam quod accusantium, perferendis rerum beatae, accusamus nam illo! Quam facere mollitia rerum aperiam aspernatur assumenda cupiditate error, adipisci libero fuga nam! Dignissimos laboriosam, sunt ad, fugiat sit corporis laborum accusantium natus mollitia incidunt nesciunt quaerat unde repudiandae quo non beatae voluptatem, nulla est aliquid ratione! Cumque distinctio vero necessitatibus minima repellendus cupiditate totam quae in eum sed voluptate obcaecati id quo quis sapiente tempora quaerat earum mollitia libero nisi unde, accusantium, sint ullam? Fugiat fugit, repellat! Expedita rerum quasi eligendi vitae repellat eveniet perferendis officiis et asperiores reprehenderit.
+              </div>
+
+              <div v-if="btnClicked==8">
+                <h3>
+                  References
+                </h3>
+                <p><a href="#">www.abc.com</a></p>
+                <p><a href="#">www.pizza.com</a></p>
+                <p><a href="#">www.doggo.com</a></p>
+                <p><a href="#">www.xyz.com</a></p>
+
+              </div>
+
+            </div>
+
           </div>
+
+          <div class="row py-3">
+            <div class="col-md-1">
+              <i class="fa fa-arrow-left a-bot" v-on:click="changeBtn(-1)" ></i>
+            </div>
+            <div class="col-md-10 text-center">
+              <span class="soc-med-logos logo-down" style="background-color: #3b5998">
+                <i class="fa fa-facebook-f logo"></i>
+              </span>
+              <span class="soc-med-logos logo-down" style="background-color: #55acee">
+                <i class="fa fa-twitter logo"></i>
+              </span>
+              <span class="soc-med-logos logo-down" style="background-color: #db3236">
+                <i class="fa fa-google logo"></i>
+              </span>
+              <span class="soc-med-logos logo-down" style="background-color: #0077B5">
+                <i class="fa fa-linkedin logo"></i>
+              </span>
+            </div>
+            <div class="col-md-1">
+              <i class="fa fa-arrow-right a-bot" v-on:click="changeBtn(1)"></i>
+            </div>
+          </div>
+
         </div>
         </div>
       </div>
@@ -97,7 +192,7 @@
     name: "cardPage",
     data(){
       return{
-        btnClicked: 1,
+        btnClicked: 2,
         activeCol: '#c12020',
         inactiveCol: '#666'
       }
@@ -215,5 +310,16 @@ img{
 .fa-arrow-right:hover, .fa-arrow-left:hover{
   opacity: 1;
   cursor: pointer;
+}
+.main-art-img{
+  float: right;
+  margin: 0px 0px 10px 10px;
+}
+.a-bot{
+  color: #888;
+}
+.logo-down{
+  border-radius: 100% !important;
+  padding: 3px !important;
 }
 </style>
