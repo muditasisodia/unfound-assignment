@@ -263,6 +263,9 @@ li:hover{
   display: inline-block;
   margin-right: 8px;
 }
+.soc-med-logos:hover{
+  cursor: pointer;
+}
 .logo{
   padding: 10px 30px;
   color: white;
@@ -321,5 +324,8 @@ img{
 .logo-down{
   border-radius: 100% !important;
   padding: 3px !important;
+}
+.col-md-3{
+  /*position: fixed;*/
 }
 </style>

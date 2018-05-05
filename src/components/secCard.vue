@@ -60,14 +60,12 @@
 .img-holder{
   height: 230px;
   background-color: black;
-  overflow: hidden;
 }
 .card-body{
   height: 345px;
 }
 .card-text{
   line-height: 1.6;
-  /*white-space: nowrap;*/
 }
 .newsTag{
   background-color: #636363;
@@ -99,9 +97,10 @@
 }
 img{
   transition: opacity 1s;
-  width: auto;
+  width: 100%;
   height: 100%;
   border-radius: 0px;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 768px){

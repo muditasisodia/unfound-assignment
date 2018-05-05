@@ -146,11 +146,13 @@ background-color: #7180AC;
 .img-holder{
   background-color:  black;
   padding: 0px;
+
 }
 img{
   transition: opacity 1s;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 769px) {
