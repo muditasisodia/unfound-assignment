@@ -84,7 +84,7 @@
 }
 ul{
   height:100%;
-  background-color: black;
+  background-color: white;
 }
 li{
   height: 16.666667%;
@@ -164,4 +164,16 @@ img{
     padding-top: 5%;
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+  .list-unstyled{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  
+}
+
 </style>

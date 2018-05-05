@@ -40,7 +40,7 @@
       </div>
       <div class="modal-body">
         <input class="form-control mr-sm-2" type="search" aria-label="Search">
-        <button class="btn btn-outline-danger" type="submit">Search</button>
+        <button class="btn btn-outline-danger my-3" type="submit">Search</button>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -145,6 +145,8 @@
     font-size: 36px;
     margin-left: 50px;
 }
+
+
 
 
 </style>
