@@ -2,38 +2,39 @@
   <div>
     <div class="container-fluid">
     <div class="row mt-4">
-      <div class="col-md-9">
-        <div class="card my-4 ml-4">
+      <div class="col-md-9 mt-3">
+        <div class="card">
           <div class="card-body mx-4">
           <div class="row row-border">
             <h2 class="card-title pb-3">
               Lorem ipsum dolor sit amet
             </h2>
           </div>
-          <div class="row row-border py-3">
-            <div class="col-md-6">
+          <div class="row py-3">
+            <div class="col-md-7">
             <span>04 May 2018</span>
             <span class="px-2">|</span>
             <span style="color: #115dd8">Burning Issues</span>
-            <span class="ml-3 min-font" v-on:click="fChange(1)" v-bind:style="{color: fSel==1? fActvColor: fInactvCol}">A-</span>
-            <span class="ml-2 med-font" v-on:click="fChange(2)" v-bind:style="{color: fSel==2? fActvColor: fInactvCol}">A</span>
-            <span class="ml-2 max-font" v-on:click="fChange(3)" v-bind:style="{color: fSel==3? fActvColor: fInactvCol}">A+</span>
+            <span class="ml-2 min-font" v-on:click="fChange(1)" v-bind:style="{color: fSel==1? fActvColor: fInactvCol}">A-</span>
+            <span class="ml-1 med-font" v-on:click="fChange(2)" v-bind:style="{color: fSel==2? fActvColor: fInactvCol}">A</span>
+            <span class="ml-1 max-font" v-on:click="fChange(3)" v-bind:style="{color: fSel==3? fActvColor: fInactvCol}">A+</span>
           </div>
-          <div class="col-md-6">
+
+          <div class="col-md-5 text-center">
             <div class="logo-list">
-            <span class="soc-med-logos" style="background-color: #3b5998">
+            <button class="btn soc-med-logos mb-2" style="background-color: #3b5998">
               <i class="fa fa-facebook-f logo"></i>
-            </span>
-            <span class="soc-med-logos" style="background-color: #55acee">
+            </button>
+            <button class="btn soc-med-logos mb-2" style="background-color: #55acee">
               <i class="fa fa-twitter logo"></i>
-            </span>
-            <span class="soc-med-logos" style="background-color: #db3236">
+            </button>
+            <button class="btn soc-med-logos mb-2" style="background-color: #db3236">
               <i class="fa fa-google logo"></i>
-            </span>
-            <span class="soc-med-logos" style="background-color: #0077B5">
+            </button>
+            <button class="btn soc-med-logos mb-2" style="background-color: #0077B5">
               <i class="fa fa-linkedin logo"></i>
-            </span>
-            </div>
+            </button>
+          </div>
           </div>
           </div>
           <div class="row row-border py-3">
@@ -49,11 +50,11 @@
           <div class="row py-3">
             <div class="col-md-12">
             <div class="row nav-list py-2">
-              <div class="col-md-1">
+              <div class="col-1">
               <i class="fa fa-arrow-left red-nav-btn" v-on:click="changeBtn(-1)" ></i>
               <!--Passing -1 because we need to decrease the value-->
               </div>
-              <div class="col-md-10">
+              <div class="col-10 text-center">
                 <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==2? 1: 0.7}">What</span>
                 <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==3? 1: 0.7}">Why</span>
                 <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==4? 1: 0.7}">When</span>
@@ -62,7 +63,7 @@
                 <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==7? 1: 0.7}">How</span>
                 <span class="red-nav-btn" v-bind:style="{opacity: btnClicked==8? 1: 0.7}">References</span>
               </div>
-              <div class="col-md-1">
+              <div class="col-1">
               <i class="fa fa-arrow-right red-nav-btn" v-on:click="changeBtn(1)"></i>
               </div>
             </div>
@@ -144,24 +145,24 @@
           </div>
 
           <div class="row py-3">
-            <div class="col-md-1">
+            <div class="col-1">
               <i class="fa fa-arrow-left a-bot" v-on:click="changeBtn(-1)" ></i>
             </div>
-            <div class="col-md-10 text-center">
-              <span class="soc-med-logos logo-down" style="background-color: #3b5998">
+            <div class="col-10 text-center">
+              <button class=" btn soc-med-logos" style="background-color: #3b5998">
                 <i class="fa fa-facebook-f logo"></i>
-              </span>
-              <span class="soc-med-logos logo-down" style="background-color: #55acee">
+              </button>
+              <button class="btn soc-med-logos" style="background-color: #55acee">
                 <i class="fa fa-twitter logo"></i>
-              </span>
-              <span class="soc-med-logos logo-down" style="background-color: #db3236">
+              </button>
+              <button class="btn soc-med-logos" style="background-color: #db3236">
                 <i class="fa fa-google logo"></i>
-              </span>
-              <span class="soc-med-logos logo-down" style="background-color: #0077B5">
+              </button>
+              <button class="btn soc-med-logos" style="background-color: #0077B5">
                 <i class="fa fa-linkedin logo"></i>
-              </span>
+              </button>
             </div>
-            <div class="col-md-1">
+            <div class="col-1">
               <i class="fa fa-arrow-right a-bot" v-on:click="changeBtn(1)"></i>
             </div>
           </div>
@@ -170,8 +171,8 @@
         </div>
       </div>
       <!--Side Navigation -->
-      <div class="col-md-3">
-        <div class="card my-4 mr-2 side-nav">
+      <div class="col-md-3 mt-3">
+        <div class="card mr-2 side-nav pull-right">
           <ul class="list-unstyled p-3">
             <li v-bind:style="{color: btnClicked==2? activeCol: inactiveCol}" v-on:click="changeBtn(2)">What does the draft say?</li>
             <li class="add-border" v-bind:style="{color: btnClicked==3? activeCol: inactiveCol}" v-on:click="changeBtn(3)">Why lorem ipsum dolor sit amet.?</li>
@@ -236,9 +237,10 @@
 
 <style>
 .card{
-  /*height: 300px;*/
   border: none;
   border-radius: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 li{
   font-weight: 600;
@@ -277,14 +279,12 @@ li:hover{
 
 }
 .soc-med-logos{
-  display: inline-block;
   margin-right: 8px;
 }
 .soc-med-logos:hover{
   cursor: pointer;
 }
 .logo{
-  padding: 10px 30px;
   color: white;
 }
 .logo-list{
@@ -333,20 +333,30 @@ img{
 }
 .main-art-img{
   float: right;
-  margin: 0px 0px 10px 10px;
+  margin: 10px;
 }
 .a-bot{
   color: #888;
-}
-.logo-down{
-  border-radius: 100% !important;
-  padding: 3px !important;
 }
 .col-md-3{
   position: relative;
 }
 .side-nav{
   position: sticky;
-  top: 20%;
+  top: 10%;
+  width: 100%;
 }
+.col-md-6{
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 767px) {
+  .side-nav{
+    display: none;
+  }
+  .card{
+    margin: 1%;
+  }
+}
+
 </style>
