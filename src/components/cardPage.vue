@@ -171,7 +171,7 @@
       </div>
       <!--Side Navigation -->
       <div class="col-md-3">
-        <div class="card my-4 mr-2">
+        <div class="card my-4 mr-2 side-nav">
           <ul class="list-unstyled p-3">
             <li v-bind:style="{color: btnClicked==2? activeCol: inactiveCol}" v-on:click="changeBtn(2)">What does the draft say?</li>
             <li class="add-border" v-bind:style="{color: btnClicked==3? activeCol: inactiveCol}" v-on:click="changeBtn(3)">Why lorem ipsum dolor sit amet.?</li>
@@ -343,6 +343,10 @@ img{
   padding: 3px !important;
 }
 .col-md-3{
-  /*position: fixed;*/
+  position: relative;
+}
+.side-nav{
+  position: sticky;
+  top: 20%;
 }
 </style>
