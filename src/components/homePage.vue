@@ -8,8 +8,11 @@
         </div>
       </div>
     </div>
-
+    <div class="row">
+      <div class="col-md-12 text-center">
     <button class="btn btn-danger p-2 my-3">Load More</button>
+    </div>
+    </div>
   </div>
 
 </template>
@@ -112,9 +115,4 @@ export default{
 </script>
 
 <style>
-  button{
-  margin-right: auto;
-  margin-left: 47%;
-  display: block;
-  }
 </style>

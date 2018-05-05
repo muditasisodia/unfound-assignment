@@ -15,6 +15,9 @@
 
       <h3 class="card-title">{{newsdata.title}}</h3>
       <p class="card-text limit-char">{{newsdata.content}}</p>
+      <p class="read-more">
+        Read More
+      </p>
     </div>
   </div>
   </a>
@@ -50,7 +53,7 @@
 
 <style scoped>
 .card{
-  height: 575px;
+  /*height: 575px;*/
   border-radius: 0px;
   border: none;
 }
@@ -62,7 +65,7 @@
   background-color: black;
 }
 .card-body{
-  height: 345px;
+  /*height: 345px;*/
 }
 .card-text{
   line-height: 1.6;
@@ -73,7 +76,7 @@
   position:absolute;
   left: 10px;
   font-size: 13px;
-  bottom: 330px;
+  top: 215px;
   z-index: 1;
 }
 .dateTag{
@@ -102,13 +105,49 @@ img{
   border-radius: 0px;
   object-fit: cover;
 }
-
-@media only screen and (min-width: 768px){
-
-}
-
 a{
   text-decoration: none;
   color: black;
 }
+.read-more{
+  color: #DD4949;
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card{
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card{
+    height: auto;
+  }
+  .read-more{
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card{
+    height: 950px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card{
+    height: 750px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card{
+    height: 625px;
+  }
+}
+
 </style>
