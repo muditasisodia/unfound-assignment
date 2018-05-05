@@ -15,9 +15,9 @@
             <span>04 May 2018</span>
             <span class="px-2">|</span>
             <span style="color: #115dd8">Burning Issues</span>
-            <span class="ml-3 min-font">A-</span>
-            <span class="ml-2 med-font">A</span>
-            <span class="ml-2 max-font">A+</span>
+            <span class="ml-3 min-font" v-on:click="fChange(1)" v-bind:style="{color: fSel==1? fActvColor: fInactvCol}">A-</span>
+            <span class="ml-2 med-font" v-on:click="fChange(2)" v-bind:style="{color: fSel==2? fActvColor: fInactvCol}">A</span>
+            <span class="ml-2 max-font" v-on:click="fChange(3)" v-bind:style="{color: fSel==3? fActvColor: fInactvCol}">A+</span>
           </div>
           <div class="col-md-6">
             <div class="logo-list">
@@ -40,7 +40,7 @@
             <div class="col-md-5 img-holder">
               <img src="https://www.newsecuritybeat.org/wp-content/uploads/2013/02/canada-tar-sands.jpg" alt="News Image">
             </div>
-            <div class="col-md-7 content">
+            <div class="col-md-7 content" v-bind:style="{fontSize: fSize}">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet accusantium eos, sit illum quas, non eaque laudantium. Veniam atque, iusto eius repudiandae, minima, quisquam itaque magnam dicta ea facilis, qui rem quas beatae natus vitae accusantium blanditiis deleniti fugit assumenda. Ea sunt fugiat ut nesciunt iure accusamus sed voluptatibus, incidunt, deleniti itaque molestias vero, temporibus velit distinctio a aliquid, assumenda!
               </p>
@@ -71,7 +71,7 @@
 
           <div class="row">
 
-            <div class="col-md-12">
+            <div class="col-md-12" v-bind:style="{fontSize: fSize}">
 
               <div v-if="btnClicked==2">
                 <h3>What</h3>
@@ -194,7 +194,11 @@
       return{
         btnClicked: 2,
         activeCol: '#c12020',
-        inactiveCol: '#666'
+        inactiveCol: '#666',
+        fSize: '17px',
+        fActvColor: '#000',
+        fInactvCol: '#aaa',
+        fSel:2
       }
     },
     methods: {
@@ -213,7 +217,19 @@
           this.btnClicked = 8;
         }
       }
+    },
+    fChange(s){
+      this.fSel=s;
+      if(s==1){
+        this.fSize='14px'
       }
+      else if(s==3){
+        this.fSize='20px'
+      }
+      else{
+        this.fSize='17px'
+      }
+    }
     }
   }
 </script>
@@ -258,6 +274,7 @@ li:hover{
 }
 .min-font:hover, .med-font:hover, .max-font:hover{
   cursor: pointer;
+
 }
 .soc-med-logos{
   display: inline-block;
