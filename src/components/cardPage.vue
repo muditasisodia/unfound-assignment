@@ -173,12 +173,12 @@
       <div class="col-md-3">
         <div class="card my-4 mr-2">
           <ul class="list-unstyled p-3">
-            <li v-bind:style="{color: btnClicked==2? activeCol: inactiveCol}" v-on:click="btnClicked(2)">What does the draft say?</li>
-            <li class="add-border" v-bind:style="{color: btnClicked==3? activeCol: inactiveCol}" v-on:click="btnClicked(3)">Why lorem ipsum dolor sit amet.?</li>
-            <li class="add-border" v-bind:style="{color: btnClicked==4? activeCol: inactiveCol}" v-on:click="btnClicked(4)">When lorem ipsum dolor sit amet consectetur?</li>
-            <li class="add-border" v-bind:style="{color: btnClicked==5? activeCol: inactiveCol}" v-on:click="btnClicked(5)">Where lorem ipsum dolor sit?</li>
-            <li class="add-border" v-bind:style="{color: btnClicked==6? activeCol: inactiveCol}" v-on:click="btnClicked(6)">Who lorem ipsum dolor sit amet?</li>
-            <li class="add-border" v-bind:style="{color: btnClicked==7? activeCol: inactiveCol}" v-on:click="btnClicked(7)">How lorem ipsum dolor sit amet consectetur adipisicing?</li>
+            <li v-bind:style="{color: btnClicked==2? activeCol: inactiveCol}" v-on:click="changeBtn(2)">What does the draft say?</li>
+            <li class="add-border" v-bind:style="{color: btnClicked==3? activeCol: inactiveCol}" v-on:click="changeBtn(3)">Why lorem ipsum dolor sit amet.?</li>
+            <li class="add-border" v-bind:style="{color: btnClicked==4? activeCol: inactiveCol}" v-on:click="changeBtn(4)">When lorem ipsum dolor sit amet consectetur?</li>
+            <li class="add-border" v-bind:style="{color: btnClicked==5? activeCol: inactiveCol}" v-on:click="changeBtn(5)">Where lorem ipsum dolor sit?</li>
+            <li class="add-border" v-bind:style="{color: btnClicked==6? activeCol: inactiveCol}" v-on:click="changeBtn(6)">Who lorem ipsum dolor sit amet?</li>
+            <li class="add-border" v-bind:style="{color: btnClicked==7? activeCol: inactiveCol}" v-on:click="changeBtn(7)">How lorem ipsum dolor sit amet consectetur adipisicing?</li>
           </ul>
         </div>
       </div><!--End of side navigation-->
@@ -200,8 +200,8 @@
     methods: {
       changeBtn(i){
 /*Started numbering of sections from 2 in order to reserve 1 and -1 for increment and decrement*/
-        if(i>=2 && i<=8){
-          this.btnClicked=i;
+        if(i>=2 && i<=7){
+          this.btnClicked = i;
         }
         else{
 
